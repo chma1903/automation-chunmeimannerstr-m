@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-30T16:02:32.867Z",
+    "end": "2020-10-30T16:02:59.013Z",
+    "duration": 26146,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c543af3-bf90-4f46-bd8d-343477ecf773",
+      "title": "",
+      "fullFile": "cypress/integration/vue-hotel-test.spce.js",
+      "file": "cypress/integration/vue-hotel-test.spce.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3e12a954-a111-472b-8f55-86cd35f069cb",
+          "title": "test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform login and logut",
+              "fullTitle": "test suite Perform login and logut",
+              "timedOut": null,
+              "duration": 2615,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "e62fc1f6-b74f-405f-86b0-7467ccdaf529",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "navigate to all pages",
+              "fullTitle": "test suite navigate to all pages",
+              "timedOut": null,
+              "duration": 3480,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.navigateToIndexPage(cy, 'Tester Hotel Overview');\nindexFuncs.navigateToClientsPage(cy, 'Clients');\nroomsFuncs.navigateToIndexPage(cy, 'Tester Hotel Overview');\nindexFuncs.navigateToBillsPage(cy, 'Bills');\nroomsFuncs.navigateToIndexPage(cy, 'Tester Hotel Overview');\nindexFuncs.navigateToReservationsPage(cy, 'Reservations');\nroomsFuncs.navigateToIndexPage(cy, 'Tester Hotel Overview');\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "3adcc860-7a80-4a52-a0c3-13dfb5f4f7ce",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "edit a room",
+              "fullTitle": "test suite edit a room",
+              "timedOut": null,
+              "duration": 3975,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.editFuntion(cy);\neditRoomsFuncs.editRoom(cy);\neditRoomsFuncs.saveEditedRoom(cy, 'Rooms');\neditRoomsFuncs.checkEditedRoom(cy);\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "39f3d573-4e61-4cdc-ba8b-8258ff137ed7",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete a room",
+              "fullTitle": "test suite delete a room",
+              "timedOut": null,
+              "duration": 2308,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.deleteFuntion(cy, 'Rooms');\nroomsFuncs.cheakdeletedRoom(cy);\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "c27dce7d-1104-4dec-a173-b6b5ee7fba74",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create a new Clients",
+              "fullTitle": "test suite create a new Clients",
+              "timedOut": null,
+              "duration": 3871,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.navigateToClientsPage(cy, 'Clients');\nclientsFuncs.navigateToCreateNewClients(cy, 'New Client');\ncreateNewClientsFuncs.infyllningAvFörmuläret(cy);\ncreateNewClientsFuncs.saveClents(cy, 'Clients');\ncreateNewClientsFuncs.checkNewClients(cy);\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "b03999e4-9da1-4b6c-a955-1d9ec104e48e",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create a new room",
+              "fullTitle": "test suite create a new room",
+              "timedOut": null,
+              "duration": 3488,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginFuncs.performValidLogin(cy, _targets[\"default\"].username, _targets[\"default\"].password, 'Overview');\nindexFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.navigateToCreateNewRoomPage(cy, 'New Room');\ncreateNewRoomFuncs.infyllningAvFörmulär(cy);\ncreateNewRoomFuncs.saveNyrooms(cy, 'Rooms');\ncreateNewRoomFuncs.checkNyRoom(cy);\nindexFuncs.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "16c1d813-033e-42e6-8242-d7bacdfccadb",
+              "parentUUID": "3e12a954-a111-472b-8f55-86cd35f069cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e62fc1f6-b74f-405f-86b0-7467ccdaf529",
+            "3adcc860-7a80-4a52-a0c3-13dfb5f4f7ce",
+            "39f3d573-4e61-4cdc-ba8b-8258ff137ed7",
+            "c27dce7d-1104-4dec-a173-b6b5ee7fba74",
+            "b03999e4-9da1-4b6c-a955-1d9ec104e48e",
+            "16c1d813-033e-42e6-8242-d7bacdfccadb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19737,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}

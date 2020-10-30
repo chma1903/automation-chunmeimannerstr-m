@@ -16,9 +16,6 @@ let roomNumber = faker.random.number(200)
 let price = faker.random.number(20000)
 
 
-
-
-
 //funcion/metod
 function cheaktitleOfCreateNewRoomPage(cy,contentToConform){
     cy.titile().should('eq',titleOfCreateNewRoomPage)
@@ -45,17 +42,11 @@ function checkNyRoom(cy){
     cy.contains(price)
 }
 
-/*function cheakdeletedRoom(cy){
-    cy.get().should('not.exist')
-}
-*/
 
 //export
 module.exports = {
     cheaktitleOfCreateNewRoomPage,
     infyllningAvFörmulär,
     saveNyrooms,
-    checkNyRoom
-    //cheakdeletedRoom
-    
+    checkNyRoom    
 }

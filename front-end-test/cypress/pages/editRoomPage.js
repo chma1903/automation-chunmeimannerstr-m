@@ -49,5 +49,4 @@ module.exports = {
     saveEditedRoom,
     checkTitelOfRoomsPage,
     checkEditedRoom
-    
 }
